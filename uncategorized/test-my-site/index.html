@@ -20,6 +20,18 @@
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
   <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+  
+  <!-- 文章加密访问 -->
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+  </script>
 
 
 
@@ -75,7 +87,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="html,">
 
 
 
@@ -88,17 +100,18 @@
 
 
 
-<meta name="description" content="Change the world by program,Change us by bugs">
+<meta name="description" content="我是一段Python代码的点点滴滴 点到点 的的">
+<meta name="keywords" content="html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test_my_site">
 <meta property="og:url" content="https://iit666.github.in/uncategorized/test-my-site/index.html">
 <meta property="og:site_name" content="无敌小王子哦">
-<meta property="og:description" content="Change the world by program,Change us by bugs">
+<meta property="og:description" content="我是一段Python代码的点点滴滴 点到点 的的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-10T07:42:36.773Z">
+<meta property="og:updated_time" content="2019-05-10T12:00:44.766Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test_my_site">
-<meta name="twitter:description" content="Change the world by program,Change us by bugs">
+<meta name="twitter:description" content="我是一段Python代码的点点滴滴 点到点 的的">
 
 
 
@@ -153,6 +166,8 @@
 
 
 
+
+  <!-- 页面点击小红心 -->
 
 </head>
 
@@ -252,7 +267,7 @@
       
         
         <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
+          <a href="/404.html" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
             
@@ -386,7 +401,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0 字
+                  96 字
                 </span>
               
 
@@ -423,7 +438,8 @@
       
 
       
-        
+        <h2 id="我是一段Python代码"><a href="#我是一段Python代码" class="headerlink" title="我是一段Python代码"></a>我是一段Python代码</h2><p>的点点滴滴 点到点 的的<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#CalThreeKingdomsV1.py</span><br><span class="line">import jieba</span><br><span class="line">txt = open(&quot;tree.txt&quot;,&quot;r&quot;,encoding=&quot;utf-8&quot;).read()</span><br><span class="line">words=jieba.lcut(txt)</span><br><span class="line">counts = &#123;&#125;</span><br><span class="line">for word in words:</span><br><span class="line">    if len(word) == 1:</span><br><span class="line">        cotinue</span><br><span class="line">    else:</span><br><span class="line">        counts[word] = counts.get(word,0) + 1</span><br><span class="line">items = list(counts.items())</span><br><span class="line">items.sort(key=lambda x:x[1],reverse=True)</span><br><span class="line">for i in range(15):</span><br><span class="line">    word,count = items[i]</span><br><span class="line">    print(&quot;&#123;0:&lt;10&#125;&#123;1:&gt;5&#125;&quot;.format(word,count))</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -440,41 +456,6 @@
 		
 	</div>
 
-	<!-- 在文章底部增加版权信息-->
-	<div>
-      
-        
-<div class="my_post_copyright">
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-  
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/uncategorized/test-my-site/">test_my_site</a></p>
-  <p><span>文章作者:</span><a href="/" title="访问 王立帅 的个人博客">王立帅</a></p>
-  <p><span>发布时间:</span>2019年05月09日 - 22:05</p>
-  <p><span>最后更新:</span>2019年05月10日 - 15:05</p>
-  <p><span>原始链接:</span><a href="/uncategorized/test-my-site/" title="test_my_site">https://iit666.github.in/uncategorized/test-my-site/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://iit666.github.in/uncategorized/test-my-site/" aria-label="复制成功！"></i></span>
-  </p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
-</div>
-<script> 
-    var clipboard = new Clipboard('.fa-clipboard');
-    $(".fa-clipboard").click(function(){
-      clipboard.on('success', function(){
-        swal({   
-          title: "",   
-          text: '复制成功',
-          icon: "success", 
-          showConfirmButton: true
-          });
-    });
-    });  
-</script>
-
-      
-	</div>
 
     
 
@@ -511,25 +492,65 @@
 
     
       <div>
-        <ul class="post-copyright">
+        
+<div>
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>本文作者：</strong>
     王立帅
   </li>
+  
+  <li>
+   <strong> 发布时间:</strong>
+   2019年05月09日 - 22:05
+  </li>
+  
+  <li>
+	<strong>最后更新:</strong>
+	2019年05月10日 - 20:05
+  </li>
+  
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     <a href="https://iit666.github.in/uncategorized/test-my-site/" title="test_my_site">https://iit666.github.in/uncategorized/test-my-site/</a>
+	<span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://iit666.github.in/uncategorized/test-my-site/" aria-label="复制成功！"></i></span>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
     本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
   </li>
 </ul>
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
 
       </div>
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag"><i class="fa fa-tag"></i> html</a>
+          
+        </div>
       
 
       
@@ -540,7 +561,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/uncategorized/hello-world/" rel="next" title="Hello World">
+              <a href="/daima/lianjie/hello-world/" rel="next" title="Hello World">
                 <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
@@ -635,8 +656,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -662,7 +692,25 @@ var jiathis_config={
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -714,6 +762,22 @@ var jiathis_config={
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#我是一段Python代码"><span class="nav-number">1.</span> <span class="nav-text">我是一段Python代码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -784,7 +848,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共137字</span>
+  <span class="post-count">博客全站共234字</span>
 </div>
 
         
@@ -811,7 +875,7 @@ var jiathis_config={
     
 
   </div>
-
+  
   
 
 <script type="text/javascript">
@@ -910,7 +974,7 @@ var jiathis_config={
   <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
-
+  
   
 
 
@@ -1295,5 +1359,6 @@ var jiathis_config={
 
   <script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
 <script type="text/javascript" src="/js/src/custom.js"></script>
+
 </body>
 </html>

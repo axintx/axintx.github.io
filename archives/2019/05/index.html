@@ -20,6 +20,18 @@
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
   <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+  
+  <!-- 文章加密访问 -->
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+  </script>
 
 
 
@@ -153,6 +165,8 @@
 
 
 
+  <!-- 页面点击小红心 -->
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -251,7 +265,7 @@
       
         
         <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
+          <a href="/404.html" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
             
@@ -417,7 +431,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/uncategorized/hello-world/" itemprop="url">
+            <a class="post-title-link" href="/daima/lianjie/hello-world/" itemprop="url">
               
                 <span itemprop="name">Hello World</span>
               
@@ -500,7 +514,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -622,7 +654,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共137字</span>
+  <span class="post-count">博客全站共234字</span>
 </div>
 
         
@@ -649,7 +681,7 @@
     
 
   </div>
-
+  
   
 
 <script type="text/javascript">
@@ -744,7 +776,7 @@
   <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
-
+  
   
 
 
@@ -1118,5 +1150,6 @@
 
   <script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
 <script type="text/javascript" src="/js/src/custom.js"></script>
+
 </body>
 </html>

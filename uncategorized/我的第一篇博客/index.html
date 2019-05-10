@@ -20,6 +20,18 @@
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
   <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+  
+  <!-- 文章加密访问 -->
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+  </script>
 
 
 
@@ -154,6 +166,8 @@
 
 
 
+  <!-- 页面点击小红心 -->
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -252,7 +266,7 @@
       
         
         <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
+          <a href="/404.html" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
             
@@ -441,12 +455,6 @@
 		
 	</div>
 
-	<!-- 在文章底部增加版权信息-->
-	<div>
-      
-        
-      
-	</div>
 
     
 
@@ -483,20 +491,54 @@
 
     
       <div>
-        <ul class="post-copyright">
+        
+<div>
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>本文作者：</strong>
     王立帅
   </li>
+  
+  <li>
+   <strong> 发布时间:</strong>
+   2019年05月10日 - 01:05
+  </li>
+  
+  <li>
+	<strong>最后更新:</strong>
+	2019年05月10日 - 01:05
+  </li>
+  
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     <a href="https://iit666.github.in/uncategorized/我的第一篇博客/" title="我的第一篇博客">https://iit666.github.in/uncategorized/我的第一篇博客/</a>
+	<span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://iit666.github.in/uncategorized/我的第一篇博客/" aria-label="复制成功！"></i></span>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
     本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
   </li>
 </ul>
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
 
       </div>
     
@@ -630,7 +672,25 @@ var jiathis_config={
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -752,7 +812,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共137字</span>
+  <span class="post-count">博客全站共234字</span>
 </div>
 
         
@@ -779,7 +839,7 @@ var jiathis_config={
     
 
   </div>
-
+  
   
 
 <script type="text/javascript">
@@ -878,7 +938,7 @@ var jiathis_config={
   <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
-
+  
   
 
 
@@ -1263,5 +1323,6 @@ var jiathis_config={
 
   <script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
 <script type="text/javascript" src="/js/src/custom.js"></script>
+
 </body>
 </html>
